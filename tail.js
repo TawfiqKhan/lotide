@@ -8,9 +8,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const tail = function(arr) {
+  return arr.slice(1);
+};
+
 //Test Code
 
-assertEqual("Lighouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("1", 1);
-assertEqual(1, 5);
+const result = tail([1, 2, 3]);
+assertEqual(result.length, 2);
+assertEqual(result[0], 2);
+assertEqual(result[1], 3);
+
+const words = ["Yo Yo"];
+tail(words);
+assertEqual(words.length, 1); // original array should still have 3 elements!
