@@ -1,4 +1,4 @@
-//Function Implementation
+//For Testing
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
