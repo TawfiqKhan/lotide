@@ -2,9 +2,9 @@
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`%cAssertion Passed: ${actual} === ${expected}`, `color: green`);
+    console.log(`✅✅ %cAssertion Passed: ${actual} === ${expected}`, `color: green`);
   } else {
-    console.log(`%cAssertion Failed: ${actual} !== ${expected}`, `color: red`);
+    console.log(`⛔️⛔️ %cAssertion Failed: ${actual} !== ${expected}`, `color: red`);
   }
 };
 
