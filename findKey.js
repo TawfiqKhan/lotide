@@ -45,3 +45,4 @@ console.log(findKey(movies, x => x.stars === 2));
 
 assertArraysEqual(findKey(movies, x => x.stars === 2), "noma");
 assertArraysEqual(findKey(movies, x => x.stars === 3), "Akaleri");
+assertArraysEqual(findKey(movies, x => x.stars === 1), "Ora");
