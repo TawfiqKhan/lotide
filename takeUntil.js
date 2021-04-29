@@ -1,6 +1,6 @@
 //For Testing/Assertion
 
-const assertArraysEqual = function(arr1, arr2) {
+const assertArraysEqual = function (arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`✅✅ %cTest Passed: ${arr1} & ${arr2} are equal`, `color: green`);
   } else {
@@ -8,7 +8,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-const eqArrays = function(arr1, arr2) {
+const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length)
     return false;
 
@@ -19,18 +19,10 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-
-
 //Main Function
-const takeUntil = function(arr, callback) {
+const takeUntil = function (arr, callback) {
   let output = [];
-  // arr.forEach(element => {
-  //   if(!callback(element)){
-  //     output.push(callback(element))
-  //   } else {
-  //     return output;
-  //   }
-  // });
+
   for (let item of arr) {
     if (!callback(item)) {
       output.push(item);
@@ -38,11 +30,11 @@ const takeUntil = function(arr, callback) {
       return output;
     }
   }
-  return output;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
+
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 
