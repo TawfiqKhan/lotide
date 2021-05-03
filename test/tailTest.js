@@ -1,10 +1,7 @@
 const assert = require('chai').assert;
-const tail = require("../tail");
+const _ = require('../index');
 
-const result = tail([1, 2, 3, 4]);
-// assertEqual(result.length, 3);
-// assertEqual(result[0], 3);
-// assertEqual(result[1], 3);
+const result = _.tail([1, 2, 3, 4]);
 
 const words = ["Yo Yo"];
 // tail(words);
@@ -16,11 +13,11 @@ describe("#Tail", () => {
   });
 
   it("returns tail [2, 3, 4] for [1, 2, 3, 4] ", () => {
-    assert.deepEqual(tail([1, 2, 3, 4]), [2, 3, 4])
+    assert.deepEqual(_.tail([1, 2, 3, 4]), [2, 3, 4])
   });
 
   it("original array should still have 3 elements!", () => {
-    tail(words);
+    _.tail(words);
     assert.strictEqual(words.length, 1)
   });
 })
