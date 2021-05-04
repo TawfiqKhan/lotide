@@ -1,4 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
 
 // Arrays with 1 or two item should return an empty array
 // array with odd number of items, return an array with single element
